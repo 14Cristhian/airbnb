@@ -1,3 +1,13 @@
+
+CREATE user admin_bnb
+IDENTIFIED BY cristhian14;
+
+GRANT create session,create table,
+create sequence, create view
+TO admin_bnb
+WITH ADMIN OPTION;
+
+CONNECT admin_bnb/cristhian14@locahost:1521/FREEPDB1;
 --Crear tablas
 
 CREATE TABLE place (
